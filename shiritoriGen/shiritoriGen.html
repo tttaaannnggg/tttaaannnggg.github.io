@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src = './shiritoriGen.js' type = 'text/javascript'></script>
+</head>
+<body>
+	<h1> shiritori poem generator </h1>
+	<p>this program starts with first word of a block of text, finds a word that starts with the last letter of the first word, and so on, until there are no remaining words that fit the criteria. It will then produce a body of text consisting of all of the selected words. This is based off of the traditional Japanese game called "shiritori".</p>
+	<textarea id='text'></textarea>
+	<br/>
+	<button id='submit' onclick='handleSubmit()'>submit text</button>
+	<p id='outPar'></p>
+</body>
+</html>
