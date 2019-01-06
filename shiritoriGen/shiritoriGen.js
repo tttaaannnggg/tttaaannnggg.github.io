@@ -1,19 +1,21 @@
 //TODO: purge all punctuation and set everything to lowercase
 
+let textArea;
+
 function handleSubmit(){
-	let textArea = document.querySelector('#text').value.split(' ');
+	textArea = document.querySelector('#text').value.split(' ');
 	// destructure textArea into object
 	let currentWord;
 	let cachedWords = {};
 	for (let i = 0; i < textArea.length; i++){
-		currentWord = textArea[i];
+		currentWord = textArea[i].toLowerCase();
 		if (!cachedWords[currentWord[0]]){
 			cachedWords[currentWord[0]] = [];
 		}
 		cachedWords[currentWord[0]].push(currentWord);
 	}
-	console.log(textArea[0]);
-	let output = buildOutput(textArea[0] , cachedWords);
+	let selectRandom = Math.floor(Math.random()*textArea.length)
+	let output = buildOutput(textArea[selectRandom] , cachedWords);
 	
 	renderOutput(output);
 }
