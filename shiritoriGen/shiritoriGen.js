@@ -1,10 +1,7 @@
-//TODO: purge all punctuation and set everything to lowercase
-
 let textArea;
 
 function handleSubmit(){
-	textArea = document.querySelector('#text').value.split(' ');
-	// destructure textArea into object
+	textArea = document.querySelector('#text').value.split(/\W/).filter(Boolean);
 	let currentWord;
 	let cachedWords = {};
 	for (let i = 0; i < textArea.length; i++){
