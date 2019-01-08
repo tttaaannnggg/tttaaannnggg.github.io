@@ -5,7 +5,18 @@
 	<body>
 		<h2>projects</h2>
 		<ul>
-			<li><a href='./shiritoriGen/shiritoriGen.html'>shiritori poem generator</a></li>
+			<li>
+				<a href='./shiritoriGen/shiritoriGen.html'>shiritori poem generator</a>
+				<ul>
+					<li>This project was a fun one! I'd been able to solve JS algorithms of a similar complexity before, but never had to actually make it interface with the DOM. Some of the ways I'm dealing with scope are suspect (there are a few globals floating around that I need to clean up later), but I'm proud of myself for finding a (semi) practical use for recursion!</li>
+				</ul>
+			</li>
+			<li>
+				<a href='./orderByLength/orderByLength.html'>sort the words in a body of text by length</a>
+				<ul>
+					<li>This is not quite as complex as the shiritoriGen, but I cleaned up a lot of the nonsense and tried my best to work using functional programming strategies. The only places where side effects happen are that I'm mutating my textArr (which doesn't matter b/c it's initialized in the scope of orderByLength anyways), and I'm using a p tag as an output to render the final result. Everything else just passes return values from one function to another. I could probably reduce time complexity, or use built-in methods for some of the stuff I'm doing (I wrote my own function to flatten an array, which I probably didn't have to do), but I'm prety happy with how it works for now.</li>
+				</ul>
+			</li>
 		</ul>
 	</body>
 </html>
