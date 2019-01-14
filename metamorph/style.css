@@ -1,0 +1,9 @@
+.wrapper{
+	font-size: 2em;
+	max-width: 1000px;
+	padding-top: 50px;
+	margin: auto;
+}
+span{
+	transition: all 0.5s;
+}
