@@ -1,8 +1,0 @@
-.wrapper{
-	max-width: 800px;
-	padding-top: 200px;
-	margin: auto;
-}
-span{
-	transition: all 0.5s;
-}
